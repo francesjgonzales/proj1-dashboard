@@ -1,0 +1,18 @@
+@forward 'globals';
+
+.nav__main__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 5em 0 5em;
+}
+
+.nav__main__menu-item {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav__main__menu-links {
+  padding: 0 1em 0 1em;
+  display: block;
+}
