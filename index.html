@@ -13,30 +13,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;800&display=swap" rel="stylesheet">
 
     <!-- CSS File -->
-    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1682942844259">
+    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1682991364907">
 
     <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/93cb64c8b1.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/1e0a0ac5e4.js" crossorigin="anonymous"></script>
 </head>
 
-
 <body>
-    <nav class="nav__main__menu">
-        <div class="nav__main__menu-header">
-            <p>Accounts</p>
+    <nav class="nav-menu">
+        <div class="nav-menu__header">
+            <h4>Accounts</h4>
         </div>
-        <div>
-            <a onclick="hamburgerBtn()" class="nav__main__menu-hamburger"><i class="fa-solid fa-bars"></i></a>
+        <div class="nav-menu__header">
+            <a onclick="hamburgerBtn()" class="nav-menu__hamburger"><i class="fa-solid fa-bars"></i></a>
         </div>
-        <div>
-            <ul class="nav__main__menu-item" id="nav__main__menu-item-mobile">
-                <li class="nav__main__menu-links">
+        <div class="nav-menu__header">
+            <ul class="nav-menu__item" id="nav-menu__mobile">
+                <li class="nav-menu__links">
                     <a href="#">
-                        <p><i class="fa-solid fa-magnifying-glass"></i> Search</p>
+                        <p>Search
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </p>
                     </a>
                 </li>
-                <li class="nav__main__menu-links">
+                <li class="nav-menu__links">
                     <a href="#">
                         <p>New Item <i class="fa-solid fa-plus"></i></p>
                     </a>
@@ -45,29 +45,112 @@
         </div>
     </nav>
 
-    <main>
-        <section>
-            <article>
-                <h1>This is Project 1 with Sass, BEM and Gulp</h1>
-                <p>Website starter using Gulp, Sass and Browser-sync</p>
+    <!-- DEALS' TABLE start -->
+    <section class="deals-table">
+        <div class="deals-table__menu">
+            <ul >
+                <li class="deals-table__menu-item">
+                    <a href="#" class="deals-table__menu-links">
+                        <p class="deals-table__menu-links-text"> Search <i class="fa-solid fa-magnifying-glass"></i></p>
+                    </a>
+                </li>
+                <li class="deals-table__menu-item">
+                    <a href="#" class="deals-table__menu-links">
+                        <p class="deals-table__menu-links-text">Owner
+                            <i class="fa-solid fa-user"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="deals-table__menu-item">
+                    <a href="" class="deals-table__menu-links">
+                        <p class="deals-table__menu-links-text">Filter
+                            <i class="fa-solid fa-filter"></i>
+                        </a>
+                    </p>
+                </li>
+                <li class="deals-table__menu-item">
+                    <a href="" class="deals-table__menu-links">
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </a>
+                </li>
+                <li class="deals-table__menu-item">
+                    <a href="" class="deals-table__menu-links">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="deals-table__menu-mobile">
+            <ul >
+                <li class="deals-table__menu-item">
+                    <a href="#" class="deals-table__menu-links">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                <li class="deals-table__menu-item">
+                    <a href="#" class="deals-table__menu-links">
+                            <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li class="deals-table__menu-item">
+                    <a href="" class="deals-table__menu-links">
+                            <i class="fa-solid fa-filter"></i>
+                        </a>
+                </li>
+                <li class="deals-table__menu-item">
+                    <a href="" class="deals-table__menu-links">
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </a>
+                </li>
+                <li class="deals-table__menu-item">
+                    <a href="" class="deals-table__menu-links">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <table class="deals-table__content">
+            <div>
+                <thead>
+                    <tr>
+                        <th scope="col"> Deals <i class="fa-solid fa-circle-chevron-down"></i></th>
+                        <th> Owner <i class="fa-solid fa-sort"></i></th>
+                        <th> Stage </th>
+                        <th> Priority </th>
+                        <th> Deal Value <i class="fa-solid fa-sort"></i> </th>
+                        <th> Close Date <i class="fa-solid fa-sort"></i></th>
+                        <th> POC </th>
+                        <th> Last Contact </th>
+                        <th> Phone </th>
+                        <th></th>
+                    </tr>
+                </thead>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Item 1</td>
-                        </tr>
-                    </thead>
-                </table>
-            </article>
-        </section>
-    </main>
+                <tbody>
+                    <tr>
+                        <th scope="row"> Name <i class="fa-solid fa-pen-to-square"></i> </th>
+                        <td><img src="./app/images/Frame-350x350.png" alt="user-image"
+                                class="deals-table__content-user-image"></td>
+                        <td>Lead</td>
+                        <td>High</td>
+                        <td>$70,000</td>
+                        <td>Jun 24 <i class="fa-solid fa-bell"></i></td>
+                        <td> POC Name</td>
+                        <td> Date </td>
+                        <td><i class="fa-solid fa-phone"></i> +1 2345 6378</td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                </tbody>
+            </div>
+        </table>
+    </section>
+    <!-- DEALS' TABLE end -->
 
-    <footer>Footer text</footer>
-
+    <footer class="footer">Footer text</footer>
 
 </body>
 
 <!-- Javascript File -->
-<script src="dist/all.js?cb=1682942844259"></script>
+<script src="dist/all.js?cb=1682991364907"></script>
 
 </html>

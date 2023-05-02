@@ -1,1 +1,1 @@
-function hamburgerBtn(){document.getElementById("nav__main__menu-item-mobile").classList.toggle("nav__main__menu-links")}console.log("Hey");
+function hamburgerBtn(){document.getElementById("nav-menu__mobile").classList.toggle("nav-menu__links")}console.log("Hey");

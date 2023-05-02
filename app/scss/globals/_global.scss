@@ -14,3 +14,25 @@ html {
     padding: 0;
     font-family: 'Segoe UI','Inter', sans-serif;
   }
+
+  ul, li {
+    padding: 0;
+  }
+
+  // Deals, Closed Won and Board Summary Tables
+  th, td {
+    text-align: left;
+    padding: 1em;
+    width: auto;
+  }
+
+  @media (max-width: 820px) {
+    .nav-menu {
+      padding: 2em 2em 0 2em;
+    }
+  
+    .deals-table {
+      padding: 2em 2em 0 2em;
+      overflow: auto;
+    }
+  }
