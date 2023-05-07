@@ -97,6 +97,9 @@
 
   .deals-table {
     padding: 2em 2em 0 2em;
+  }
+
+  .deals-table__content {
     overflow: auto;
   }
 }
@@ -104,7 +107,6 @@
 @media (max-width: 400px) {
   .deals-table {
     padding: 0 1em 0 0;
-    overflow: auto;
   }
 
   .deals-table__menu {
@@ -120,12 +122,15 @@
     width: 50px;
   }
 
+  .deals-table__content {
+    overflow: auto;
+  }
+
   .deals-table__content-user-image {
     width: 100%;
     height: auto;
   }
 }
-
 
 // Footer Table
 .footer {

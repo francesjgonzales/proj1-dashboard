@@ -9,6 +9,7 @@
   "author": "Frances Gonzales",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^1.4.0",
     "browser-sync": "^2.29.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",

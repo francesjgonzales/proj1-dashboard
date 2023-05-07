@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;800&display=swap" rel="stylesheet">
 
     <!-- CSS File -->
-    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1682991364907">
+    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1683429880505">
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1e0a0ac5e4.js" crossorigin="anonymous"></script>
@@ -24,9 +24,9 @@
         <div class="nav-menu__header">
             <h4>Accounts</h4>
         </div>
-        <div class="nav-menu__header">
+        <divn class="nav-menu__header">
             <a onclick="hamburgerBtn()" class="nav-menu__hamburger"><i class="fa-solid fa-bars"></i></a>
-        </div>
+        </divn>
         <div class="nav-menu__header">
             <ul class="nav-menu__item" id="nav-menu__mobile">
                 <li class="nav-menu__links">
@@ -48,7 +48,7 @@
     <!-- DEALS' TABLE start -->
     <section class="deals-table">
         <div class="deals-table__menu">
-            <ul >
+            <ul>
                 <li class="deals-table__menu-item">
                     <a href="#" class="deals-table__menu-links">
                         <p class="deals-table__menu-links-text"> Search <i class="fa-solid fa-magnifying-glass"></i></p>
@@ -65,7 +65,7 @@
                     <a href="" class="deals-table__menu-links">
                         <p class="deals-table__menu-links-text">Filter
                             <i class="fa-solid fa-filter"></i>
-                        </a>
+                    </a>
                     </p>
                 </li>
                 <li class="deals-table__menu-item">
@@ -81,7 +81,7 @@
             </ul>
         </div>
         <div class="deals-table__menu-mobile">
-            <ul >
+            <ul>
                 <li class="deals-table__menu-item">
                     <a href="#" class="deals-table__menu-links">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -89,13 +89,13 @@
                 </li>
                 <li class="deals-table__menu-item">
                     <a href="#" class="deals-table__menu-links">
-                            <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-user"></i>
                     </a>
                 </li>
                 <li class="deals-table__menu-item">
                     <a href="" class="deals-table__menu-links">
-                            <i class="fa-solid fa-filter"></i>
-                        </a>
+                        <i class="fa-solid fa-filter"></i>
+                    </a>
                 </li>
                 <li class="deals-table__menu-item">
                     <a href="" class="deals-table__menu-links">
@@ -109,7 +109,7 @@
                 </li>
             </ul>
         </div>
-        <table class="deals-table__content">
+        <table>
             <div>
                 <thead>
                     <tr>
@@ -126,31 +126,22 @@
                     </tr>
                 </thead>
 
-                <tbody>
-                    <tr>
-                        <th scope="row"> Name <i class="fa-solid fa-pen-to-square"></i> </th>
-                        <td><img src="./app/images/Frame-350x350.png" alt="user-image"
-                                class="deals-table__content-user-image"></td>
-                        <td>Lead</td>
-                        <td>High</td>
-                        <td>$70,000</td>
-                        <td>Jun 24 <i class="fa-solid fa-bell"></i></td>
-                        <td> POC Name</td>
-                        <td> Date </td>
-                        <td><i class="fa-solid fa-phone"></i> +1 2345 6378</td>
-                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
-                    </tr>
+                <tbody class="deals-table__content" id="dataOutput">
+
                 </tbody>
             </div>
         </table>
     </section>
+
     <!-- DEALS' TABLE end -->
 
     <footer class="footer">Footer text</footer>
 
 </body>
+<!-- axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 <!-- Javascript File -->
-<script src="dist/all.js?cb=1682991364907"></script>
+<script type="module" src="dist/all.js?cb=1683429880505"></script>
 
 </html>
