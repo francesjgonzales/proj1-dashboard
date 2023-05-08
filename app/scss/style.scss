@@ -32,15 +32,15 @@
   .nav-menu {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2em 2em 0 2em
+    padding: 2em 2em 0 2em;
+  }
+  
+  .nav-menu__item {
+    display: none;
   }
 
   .nav-menu__hamburger {
     display: flex;
-  }
-
-  .nav-menu__item {
-    display: none;
   }
 
   .nav-menu__links {
@@ -48,6 +48,7 @@
     width: 100%;
     display: inline-block;
     flex-direction: column;
+    padding: 1em 2em;
   }
 
 }
@@ -56,12 +57,14 @@
 // Deals Table
 .deals-table {
   padding: 5em 5em 0 5em;
+  overflow: auto;
 }
 
 .deals-table__menu {
   display: flex;
   justify-content: end;
   align-items: center;
+  padding: 5em 5em 0 5em;
 }
 
 .deals-table__menu-mobile {
@@ -80,26 +83,22 @@
 
 .deals-table__content {
   width: 100%;
-  overflow: auto;
 }
 
 .deals-table__content-user-image {
   width: 80px;
   height: auto;
   clip-path: circle(20%);
-  -webkit-clip-path: circle(20%);
+  -webkit-clip-path: circle(30%);
 }
 
 @media (max-width: 820px) {
-  .nav-menu {
-    padding: 2em 2em 0 2em;
-  }
-
   .deals-table {
-    padding: 2em 2em 0 2em;
+    padding: 2em 2em 0;
   }
 
   .deals-table__content {
+    padding: 0 1em;
     overflow: auto;
   }
 }
@@ -116,6 +115,7 @@
   .deals-table__menu-mobile {
     display: flex;
     align-items: center;
+    padding: 0 3em 0 3em;
   }
 
   .deals-table__menu-item {
@@ -123,6 +123,7 @@
   }
 
   .deals-table__content {
+    /* padding: 0 3em; */
     overflow: auto;
   }
 

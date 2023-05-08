@@ -18,6 +18,7 @@ exports.build = series(parallel(scssTask, jsTask, optimizeImg));
 
 ### Credits
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#browser_compatibility
+[<table>: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#browser_compatibility)
 [fetch api](https://www.youtube.com/watch?v=eS-FVnhjvEQ)
 [how to deploy gulp build in netlify](https://www.youtube.com/watch?v=KQp3VKSYQ_U)
+[toggle classList](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_class)

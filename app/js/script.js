@@ -1,9 +1,9 @@
 console.log('Hey')
 
 function hamburgerBtn() {
-    const navbarMenuItemMobile = document.getElementById('nav-menu__mobile');
-    navbarMenuItemMobile.classList.toggle('nav-menu__links')
-}
+    const navbarMenuItemMobile = document.querySelector(".nav-menu__item");
+    navbarMenuItemMobile.classList.toggle('nav-menu__links');
+};
 
 fetch('app/sampleData.json')
     .then(response => {

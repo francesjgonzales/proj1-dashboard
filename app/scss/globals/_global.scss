@@ -15,6 +15,10 @@ html {
     font-family: 'Segoe UI','Inter', sans-serif;
   }
 
+  section {
+    padding: 2em 2em 0;
+  }
+
   ul, li {
     padding: 0;
   }
@@ -24,15 +28,4 @@ html {
     text-align: left;
     padding: 1em;
     width: auto;
-  }
-
-  @media (max-width: 820px) {
-    .nav-menu {
-      padding: 2em 2em 0 2em;
-    }
-  
-    .deals-table {
-      padding: 2em 2em 0 2em;
-      overflow: auto;
-    }
   }

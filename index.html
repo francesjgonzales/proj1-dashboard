@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;800&display=swap" rel="stylesheet">
 
     <!-- CSS File -->
-    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1683431745245">
+    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1683517428060">
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1e0a0ac5e4.js" crossorigin="anonymous"></script>
@@ -24,11 +24,11 @@
         <div class="nav-menu__header">
             <h4>Accounts</h4>
         </div>
-        <divn class="nav-menu__header">
-            <a onclick="hamburgerBtn()" class="nav-menu__hamburger"><i class="fa-solid fa-bars"></i></a>
-        </divn>
         <div class="nav-menu__header">
-            <ul class="nav-menu__item" id="nav-menu__mobile">
+            <a onclick='hamburgerBtn()' class="nav-menu__hamburger"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="nav-menu__header">
+            <ul class="nav-menu__item">
                 <li class="nav-menu__links">
                     <a href="#">
                         <p>Search
@@ -46,7 +46,7 @@
     </nav>
 
     <!-- DEALS' TABLE start -->
-    <section class="deals-table">
+    <div>
         <div class="deals-table__menu">
             <ul>
                 <li class="deals-table__menu-item">
@@ -109,7 +109,9 @@
                 </li>
             </ul>
         </div>
-        <table>
+    </div>
+    <section class="deals-table">
+        <table class="deals-table__content">
             <div>
                 <thead>
                     <tr>
@@ -126,7 +128,7 @@
                     </tr>
                 </thead>
 
-                <tbody class="deals-table__content" id="dataOutput">
+                <tbody id="dataOutput">
 
                 </tbody>
             </div>
@@ -137,11 +139,12 @@
 
     <footer class="footer">Footer text</footer>
 
-</body>
-<!-- axios -->
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-<!-- Javascript File -->
-<script type="module" src="dist/all.js?cb=1683431745245"></script>
+    <!-- Javascript File -->
+    <script src="dist/all.js?cb=1683517428060"></script>
+
+</body>
 
 </html>
