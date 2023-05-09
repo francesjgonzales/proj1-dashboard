@@ -1,0 +1,72 @@
+{
+	"deals": [
+		{
+			"fullName": "Rose Apothecary",
+			"image": "app/images/profile3.png",
+			"stageColor": "#007BB7",
+			"stageText": "Lead",
+			"priorityText": "High",
+			"priorityColor": "#FD582A",
+			"dealValue": 70000,
+			"closeDate": "2023-05-07",
+			"poc": "David Rose",
+			"lastContact": "2022-06-21",
+			"phone": "+16024443333"
+		},
+		{
+			"fullName": "Dunder Mifflin",
+			"image": "app/images/profile2.png",
+			"stageColor": "#047243",
+			"stageText": "Proposal",
+			"priorityText": "High",
+			"priorityColor": "#FD582A",
+			"dealValue": 60000,
+			"closeDate": "2022-06-26",
+			"poc": "Michael Scott",
+			"lastContact": "2022-06-22",
+			"phone": "+16023334444"
+		},
+		{
+			"fullName": "Phoenix Suns",
+			"image": "app/images/profile1.png",
+			"stageColor": "#6B43C8",
+			"stageText": "Negotiation",
+			"priorityText": "Low",
+			"priorityColor": "#5CC5FF",
+			"dealValue": 78000,
+			"closeDate": "2022-07-01",
+			"poc": "Devin Booker",
+			"lastContact": "2022-06-20",
+			"phone": "+16022221111"
+		}
+	],
+
+	"closed": [
+		{
+			"company": "Sony",
+			"image": "app/images/profile3.png",
+			"stageColor": "#04B767",
+			"stageText": "Won",
+			"priorityText": "Low",
+			"priorityColor": "#5CC5FF",
+			"dealValue": 150000,
+			"closeDate": "2022-05-28",
+			"poc": "Kenichiro Yoshihima",
+			"lastContact": "2022-06-21",
+			"phone": "+16025553333"
+		},
+		{
+			"company": "Adidas",
+			"image": "app/images/profile2.png",
+			"stageColor": "#04B767",
+			"stageText": "Won",
+			"priorityText": "Low",
+			"priorityColor": "#5CC5FF",
+			"dealValue": 89000,
+			"closeDate": "2022-05-28",
+			"poc": "Lorenzo Harvey",
+			"lastContact": "",
+			"phone": "+18547220499"
+		}
+	]
+}

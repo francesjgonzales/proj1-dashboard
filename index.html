@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;800&display=swap" rel="stylesheet">
 
     <!-- CSS File -->
-    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1683517428060">
+    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1683609281457">
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1e0a0ac5e4.js" crossorigin="anonymous"></script>
@@ -128,14 +128,141 @@
                     </tr>
                 </thead>
 
-                <tbody id="dataOutput">
+                <tbody id="dealsOutput">
 
                 </tbody>
+            </div>
+            <div>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p id="totalSum"></p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
             </div>
         </table>
     </section>
 
     <!-- DEALS' TABLE end -->
+
+
+    <!-- CLOSED WON' TABLE start -->
+    <div>
+        <div class="closed-table__menu">
+            <ul>
+                <li class="closed-table__menu-item">
+                    <a href="#" class="closed-table__menu-links">
+                        <p class="closed-table__menu-links-text"> Search <i class="fa-solid fa-magnifying-glass"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="#" class="closed-table__menu-links">
+                        <p class="closed-table__menu-links-text">Owner
+                            <i class="fa-solid fa-user"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <p class="closed-table__menu-links-text">Filter
+                            <i class="fa-solid fa-filter"></i>
+                    </a>
+                    </p>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="closed-table__menu-mobile">
+            <ul>
+                <li class="closed-table__menu-item">
+                    <a href="#" class="closed-table__menu-links">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="#" class="closed-table__menu-links">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-filter"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="closed-table">
+        <table class="closed-table__content">
+            <div>
+                <thead>
+                    <tr>
+                        <th scope="col"> closed <i class="fa-solid fa-circle-chevron-down"></i></th>
+                        <th> Owner <i class="fa-solid fa-sort"></i></th>
+                        <th> Stage </th>
+                        <th> Priority </th>
+                        <th> Deal Value <i class="fa-solid fa-sort"></i> </th>
+                        <th> Close Date <i class="fa-solid fa-sort"></i></th>
+                        <th> POC </th>
+                        <th> Last Contact </th>
+                        <th> Phone </th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="multipleDataOutput">
+
+                </tbody>
+
+            </div>
+            <div>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p id="totalClosedSum"></p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </div>
+
+        </table>
+    </section>
+
+    <!-- CLOSED WON TABLE end -->
+
 
     <footer class="footer">Footer text</footer>
 
@@ -143,7 +270,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!-- Javascript File -->
-    <script src="dist/all.js?cb=1683517428060"></script>
+    <script src="dist/all.js?cb=1683609281457"></script>
 
 </body>
 
