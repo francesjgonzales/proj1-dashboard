@@ -42,14 +42,15 @@ fetch('app/multipleData.json')
             //Append the properties in the object into the created empty string
             key += `
             <tr>
-            <th scope="row"> ${property.fullName} <i class="fa-solid fa-pen-to-square"></i> </th>
-            <td><img src="${property.image}" alt="user-image"
-                    class="deals-table__content-user-image"></td>
-            <td style="background-color: ${property.stageColor};"><p>${property.stageText}</p></td>
-            <td style="background-color: ${property.priorityColor};"><p>${property.priorityText}</p></td>
+            <th class="deals-table__content-company" scope="row"> ${property.company} </th>
+            <td><i class="fa-solid fa-pen-to-square"></i></td>
+            <td style="background-color: ${property.stageColor};"><p class="deals-table__content-stageText">${property.stageText}</p></td>
+            <td style="background-color: ${property.priorityColor};"><p class="deals-table__content-priorityText">${property.priorityText}</p></td>
             <td class="deals-table__content-dealValue">${formattedCurrency}</td>
             <td>${newDate} <i class="fa-solid fa-bell"></i></td>
             <td>${property.poc}</td>
+            <td><img src="${property.image}" alt="user-image"
+            class="deals-table__content-user-image"></td>
             <td>${newContactDate}</td>
             <td><i class="fa-solid fa-phone"></i> ${property.phone}</td>
             <td><i class="fa-solid fa-ellipsis-vertical"></i></td>

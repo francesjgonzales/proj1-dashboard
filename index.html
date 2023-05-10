@@ -10,10 +10,10 @@
     <!-- Add google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS File -->
-    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1683609281457">
+    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1683729294374">
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1e0a0ac5e4.js" crossorigin="anonymous"></script>
@@ -23,8 +23,6 @@
     <nav class="nav-menu">
         <div class="nav-menu__header">
             <h4>Accounts</h4>
-        </div>
-        <div class="nav-menu__header">
             <a onclick='hamburgerBtn()' class="nav-menu__hamburger"><i class="fa-solid fa-bars"></i></a>
         </div>
         <div class="nav-menu__header">
@@ -114,14 +112,21 @@
         <table class="deals-table__content">
             <div>
                 <thead>
+                    <h2 class="deals-table__content-title"><i class="fa-solid fa-circle-chevron-down"></i> Deals</h2>
                     <tr>
-                        <th scope="col"> Deals <i class="fa-solid fa-circle-chevron-down"></i></th>
-                        <th> Owner <i class="fa-solid fa-sort"></i></th>
-                        <th> Stage </th>
-                        <th> Priority </th>
-                        <th> Deal Value <i class="fa-solid fa-sort"></i> </th>
+                        <th scope="col"> Company </th>
+                        <th></th>
+                        <th class="deals-table__content-tab"> Stage </th>
+                        <th class="deals-table__content-priorityTab"> Priority <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512" width="12" height="100%">
+                                <path
+                                    d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg></th>
+                        <th> Deal Value <i class="fa-solid fa-sort"></i> <i
+                                class="fa-regular fa-arrow-up-arrow-down"></i> </th>
                         <th> Close Date <i class="fa-solid fa-sort"></i></th>
                         <th> POC </th>
+                        <th> </th>
                         <th> Last Contact </th>
                         <th> Phone </th>
                         <th></th>
@@ -146,7 +151,10 @@
                     <td></td>
                     <td></td>
                 </tr>
+
             </div>
+
+
         </table>
     </section>
 
@@ -154,6 +162,119 @@
 
 
     <!-- CLOSED WON' TABLE start -->
+    <div>
+        <div class="closed-table__menu">
+            <ul>
+                <li class="closed-table__menu-item">
+                    <a href="#" class="closed-table__menu-links">
+                        <p class="closed-table__menu-links-text"> Search <i class="fa-solid fa-magnifying-glass"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="#" class="closed-table__menu-links">
+                        <p class="closed-table__menu-links-text">Company
+                            <i class="fa-solid fa-user"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <p class="closed-table__menu-links-text">Filter
+                            <i class="fa-solid fa-filter"></i>
+                    </a>
+                    </p>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="closed-table__menu-mobile">
+            <ul>
+                <li class="closed-table__menu-item">
+                    <a href="#" class="closed-table__menu-links">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="#" class="closed-table__menu-links">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-filter"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </a>
+                </li>
+                <li class="closed-table__menu-item">
+                    <a href="" class="closed-table__menu-links">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="closed-table">
+        <table class="closed-table__content">
+            <div>
+                <thead>
+                    <h2><i class="fa-solid fa-circle-chevron-down"></i> Closed Won</h2>
+
+                    <tr>
+                        <th scope="col"> Company</th>
+                        <th> Owner <i class="fa-solid fa-sort"></i></th>
+                        <th> Stage </th>
+                        <th> Priority </th>
+                        <th> Deal Value <i class="fa-solid fa-sort"></i> </th>
+                        <th> Close Date <i class="fa-solid fa-sort"></i></th>
+                        <th> POC </th>
+                        <th> Last Contact </th>
+                        <th> Phone </th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="multipleDataOutput">
+
+                </tbody>
+
+            </div>
+            <div>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p id="totalClosedSum"></p>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </div>
+
+        </table>
+    </section>
+
+    <!-- CLOSED WON TABLE end -->
+
+
+    <!-- BOARD SUMMARY' TABLE start -->
     <div>
         <div class="closed-table__menu">
             <ul>
@@ -223,9 +344,10 @@
         <table class="closed-table__content">
             <div>
                 <thead>
+                    <h2><i class="fa-solid fa-circle-chevron-down"></i> Board Summary</h2>
                     <tr>
-                        <th scope="col"> closed <i class="fa-solid fa-circle-chevron-down"></i></th>
-                        <th> Owner <i class="fa-solid fa-sort"></i></th>
+                        <th scope="col">Company</th>
+                        <th> </th>
                         <th> Stage </th>
                         <th> Priority </th>
                         <th> Deal Value <i class="fa-solid fa-sort"></i> </th>
@@ -250,6 +372,7 @@
                     <td></td>
                     <td>
                         <p id="totalClosedSum"></p>
+                        <h5>sum</h5>
                     </td>
                     <td></td>
                     <td></td>
@@ -261,16 +384,16 @@
         </table>
     </section>
 
-    <!-- CLOSED WON TABLE end -->
+    <!-- CBOARD SUMMARY' TABLE end -->
 
 
     <footer class="footer">Footer text</footer>
 
     <!-- axios -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 
     <!-- Javascript File -->
-    <script src="dist/all.js?cb=1683609281457"></script>
+    <script src="dist/all.js?cb=1683729294374"></script>
 
 </body>
 

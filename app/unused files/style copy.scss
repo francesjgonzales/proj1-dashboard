@@ -1,0 +1,277 @@
+@forward 'globals';
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 5em 0 5em;
+}
+
+.nav-menu__item {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-menu__links {
+  padding: 0 1em 0 1em;
+  display: block;
+}
+
+.nav-menu__hamburger {
+  position: absolute;
+  top: 3.4em;
+  right: 2em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+@media (max-width: 400px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 2em 0 2em;
+  }
+  
+  .nav-menu__item {
+    display: none;
+  }
+
+  .nav-menu__hamburger {
+    display: flex;
+  }
+
+  .nav-menu__links {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    padding: 1em 2em;
+  }
+
+}
+
+
+// Deals Table
+.deals-table {
+  padding: 5em 5em 0 5em;
+  overflow: auto;
+}
+
+.deals-table__menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5em 5em 0 5em;
+}
+
+.deals-table__menu-mobile {
+  display: none;
+}
+
+.deals-table__menu-item {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.deals-table__menu-links {
+  padding: 0 1em 0 1em;
+  display: block;
+}
+
+/* .deals-table__content {
+  width: 100%;
+} */
+
+.deals-table {
+  &__content {
+    width: 100%;
+  }
+  &__content-title {
+    padding-bottom: 1em;
+  }
+  &__content-company {
+    width: 15em;
+    color: #505676;
+  }
+  &__content-priorityText {
+    color: #fff;
+  }
+  &__content-priorityTab {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__content-stageText {
+    color: #fff;
+  }
+  &__content-stageTab {
+    background-color: #F4F5F7;
+  }
+  &__content-user-image {
+    width: 40px;
+    height: auto;
+    clip-path: circle(30%);
+    -webkit-clip-path: circle(40%);
+  }
+
+}
+
+/* .deals-table__content-title {
+  padding-bottom: 1em;
+} */
+
+/* .deals-table__content-company {
+  width: 15em;
+  color: #505676;
+} */
+/* .deals-table__content-priorityText {
+  color: #fff;
+} */
+
+/* .deals-table__content-priorityTab {
+  display: flex;
+  justify-content: space-around;
+} */
+
+/* .deals-table__content-stageText {
+  color: #fff;
+} */
+
+/* .deals-table__content-stageTab {
+  background-color: #F4F5F7;
+} */
+
+/* .deals-table__content-user-image {
+  width: 40px;
+  height: auto;
+  clip-path: circle(30%);
+  -webkit-clip-path: circle(40%);
+} */
+
+@media (max-width: 820px) {
+  .deals-table {
+    padding: 2em 2em 0;
+  }
+
+  .deals-table__content {
+    padding: 0 1em;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .deals-table {
+    padding: 0 1em 0 0;
+  }
+
+  .deals-table__menu {
+    display: none;
+  }
+
+  .deals-table__menu-mobile {
+    display: flex;
+    align-items: center;
+    padding: 0 3em 0 3em;
+  }
+
+  .deals-table__menu-item {
+    width: 50px;
+  }
+
+  .deals-table__content {
+    overflow: auto;
+  }
+
+  .deals-table__content-user-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+// Closed Table
+.closed-table {
+  padding: 5em 5em 0 5em;
+  overflow: auto;
+}
+
+.closed-table__menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5em 5em 0 5em;
+}
+
+.closed-table__menu-mobile {
+  display: none;
+}
+
+.closed-table__menu-item {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.closed-table__menu-links {
+  padding: 0 1em 0 1em;
+  display: block;
+}
+
+.closed-table__content {
+  width: 100%;
+}
+
+.closed-table__content-user-image {
+  width: 45px;
+  height: auto;
+  clip-path: circle(40%);
+  -webkit-clip-path: circle(50%);
+}
+
+@media (max-width: 820px) {
+  .closed-table {
+    padding: 2em 2em 0;
+  }
+
+  .closed-table__content {
+    padding: 0 1em;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .closed-table {
+    padding: 0 1em 0 0;
+  }
+
+  .closed-table__menu {
+    display: none;
+  }
+
+  .closed-table__menu-mobile {
+    display: flex;
+    align-items: center;
+    padding: 0 3em 0 3em;
+  }
+
+  .closed-table__menu-item {
+    width: 50px;
+  }
+
+  .closed-table__content {
+    /* padding: 0 3em; */
+    overflow: auto;
+  }
+
+  .closed-table__content-user-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+// Footer Table
+.footer {
+  padding: 5em 5em 0 5em;
+}
