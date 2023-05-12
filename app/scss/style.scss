@@ -81,6 +81,7 @@
 
   &__menu-item-filter {
     display: none;
+    border: none!important;
   }
   
   &__menu-item-filter-links {
@@ -89,7 +90,14 @@
     padding: 0 1em 0 1em;
     width: 12em;
     background-color: #fff;
+    border: 1px solid;
     display: block;
+  }
+
+  &__menu-item-filter-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
   }
 
   &__menu-mobile {
