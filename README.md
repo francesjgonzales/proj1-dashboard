@@ -20,9 +20,9 @@ The revised design showcased below is an enhanced rendition of the task I worked
 
 **CSS**
 
-1. Set up Sass partials to organize
+1. Set up Sass partials for organization
 2. BEM for clean, understandable and maintanable code
-3. User interface design translated into web page
+3. High-fidelity design translated into web page
 4. Set up media queries for responsiveness and device compatability
 
 **Javascript**
