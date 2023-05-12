@@ -99,7 +99,7 @@ fetch('app/multipleData.json')
     })
 
 
-//Featch Closed Won Data
+//Fetch Closed Won Data
 fetch('app/multipleData.json')
     .then(response => {
         if (!response.ok) {
@@ -135,14 +135,15 @@ fetch('app/multipleData.json')
             //Append the properties in the object into the created empty string
             dataValue += `
             <tr>
-            <th scope="row"> ${dataProperty.company} <i class="fa-solid fa-pen-to-square"></i> </th>
-            <td><img src="${dataProperty.image}" alt="user-image"
-                    class="deals-table__content-user-image"></td>
+            <th> ${dataProperty.company}</th>
+            <td><i class="fa-solid fa-pen-to-square"></i></td>
             <td style="background-color: ${dataProperty.stageColor};"><p>${dataProperty.stageText}</p></td>
             <td style="background-color: ${dataProperty.priorityColor};"><p>${dataProperty.priorityText}</p></td>
             <td class="closed-table__content-closedValue">${formattedCurrency}</td>
             <td>${newDate} <i class="fa-solid fa-bell"></i></td>
             <td>${dataProperty.poc}</td>
+            <td><img src="${dataProperty.image}" alt="user-image"
+                    class="deals-table__content-user-image"></td>
             <td>${newContactDate}</td>
             <td><i class="fa-solid fa-phone"></i> ${dataProperty.phone}</td>
             <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
@@ -190,4 +191,106 @@ fetch('app/multipleData.json')
         console.error('Catch', error);
     })
 
+//Fetch Board Summary Data
+fetch('app/multipleData.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('API request failed. Check the json file.')
+        }
+        let multipleApi = response.json();
+        /* console.log(multipleApi); */
+        return multipleApi;
+    })
+    .then(multipleData => {
+        let overallDataOutput = document.getElementById('overallDataOutput'); //Create a variable called 'overallDataOutput' to access the DOM element
+        let totalDataValue = ""; //Create a variable called 'totalDataValue' with an empty string to place all 'multipleData'
+
+        //Merge two arrays to get overall board summary
+        const dealsArray = multipleData.deals;
+        console.log(dealsArray);
+
+        const closedArray = multipleData.closed;
+        console.log(closedArray);
+
+        const boardArray = dealsArray.concat(closedArray);
+        console.log(boardArray);
+
+        //Loop the 'multipleData' using 'for...of...'
+        for (let overallData of boardArray) {
+
+
+
+            //Convert to Closed Won Value to currency
+            const number = parseFloat(overallData.dealValue);
+            const formattedCurrency = number.toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+            });
+
+            //Convert 'closeDate' to mm-dd
+            const date = new Date(overallData.closeDate);
+            const newDate = date.toDateString();
+
+            //Convert 'lastContact' to mm-dd
+            const lastContactDate = new Date(overallData.lastContact);
+            const newContactDate = lastContactDate.toDateString();
+
+            //Append the properties in the object into the created empty string
+            totalDataValue += `
+            <tr>
+            <th> ${overallData.company}</th>
+            <td><i class="fa-solid fa-pen-to-square"></i></td>
+            <td style="background-color: ${overallData.stageColor};"><p>${overallData.stageText}</p></td>
+            <td style="background-color: ${overallData.priorityColor};"><p>${overallData.priorityText}</p></td>
+            <td class="closed-table__content-closedValue">${formattedCurrency}</td>
+            <td>${newDate} <i class="fa-solid fa-bell"></i></td>
+            <td>${overallData.poc}</td>
+            <td><img src="${overallData.image}" alt="user-image"
+                    class="deals-table__content-user-image"></td>
+            <td>${newContactDate}</td>
+            <td><i class="fa-solid fa-phone"></i> ${overallData.phone}</td>
+            <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+        </tr>`;
+        }
+
+        //Populate the appended data in DOM element
+        overallDataOutput.innerHTML = totalDataValue;
+
+        /*---------------------------------------------------*/
+
+        // Get total sum of closed values
+        // 1. Get a reference to the table - used 'placeholder' variable
+
+        // 2. Get all the cells in the target column
+        const closedColumnIndex = 4; // Index of the target column (zero-based)
+        const closedAmount = overallDataOutput.querySelectorAll(`tbody td:nth-child(${closedColumnIndex + 1})`);
+
+
+        //4. Create a start
+        let sumClosedValue = 0;
+
+        //5. Iterate over the cells and accumulate the values
+        closedAmount.forEach(function (cell) {
+            const closedValue = cell.textContent;
+            const convertClosedValue = parseFloat(closedValue.replace('$', ''));
+            console.log(convertClosedValue * 1000);
+
+            sumClosedValue += convertClosedValue * 1000; //6. Append all converted values
+        })
+
+        //7. Convert number into US Currency
+        const totalClosedValue = document.getElementById('totalBoardSum');
+
+        const formattedClosedTotalCurrency = sumClosedValue.toLocaleString("en-US", {
+            style: "currency",
+            currency: "USD",
+        });
+
+        //8. //Populate the appended data in DOM element
+        totalClosedValue.textContent = formattedClosedTotalCurrency;
+
+    })
+    .catch(error => {
+        console.error('Catch', error);
+    })
 

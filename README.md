@@ -32,6 +32,7 @@ The revised design showcased below is an enhanced rendition of the task I worked
    - Conversion of property values to currency and date
    - Iterate multiple arrays to each table
    - Getting the sum of total values for **Deal Value** in each table
+   - Merged two arrays to create a new array
 2. Clickable mobile navbar, expected to toggle and show menu.
 
 ### Dependencies
