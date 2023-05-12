@@ -62,11 +62,11 @@
                     </a>
                 </li>
                 <li class="deals-table__menu-item">
-                    <a href="" class="deals-table__menu-links">
+                    <a onclick='filterBtn()' class="deals-table__menu-links">
                         <p class="deals-table__menu-links-text">Filter
                             <i class="fa-solid fa-filter"></i>
+                        </p>
                     </a>
-                    </p>
                 </li>
                 <li class="deals-table__menu-item">
                     <a href="" class="deals-table__menu-links">
@@ -79,6 +79,38 @@
                     </a>
                 </li>
             </ul>
+            <div class="deals-table__menu-item-filter">
+                <div class="deals-table__menu-item-filter-links">
+                    <span>
+                        <p class="deals-table__menu-item-filter-text">Filters</p>
+                    </span>
+                    <span>
+                        <p class="deals-table__menu-item-filter-text">Clear all</p>
+                    </span>
+                    <h4 class="deals-table__menu-item-filter-text">POC <svg width="15" viewBox="0 0 448 312" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M246.525 258.625C234.025 271.125 213.725 271.125 201.225 258.625L41.225 98.625C28.725 86.125 28.725 65.8249 41.225 53.3249C53.725 40.825 74.025 40.825 86.525 53.325L223.925 190.725L361.325 53.425C373.825 40.925 394.125 40.925 406.625 53.425C419.125 65.925 419.125 86.225 406.625 98.725L246.625 258.725L246.525 258.625Z"
+                                fill="black" />
+                        </svg></h4>
+                    <h4>Date <svg width="15" viewBox="0 0 448 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M246.525 258.625C234.025 271.125 213.725 271.125 201.225 258.625L41.225 98.625C28.725 86.125 28.725 65.8249 41.225 53.3249C53.725 40.825 74.025 40.825 86.525 53.325L223.925 190.725L361.325 53.425C373.825 40.925 394.125 40.925 406.625 53.425C419.125 65.925 419.125 86.225 406.625 98.725L246.625 258.725L246.525 258.625Z"
+                                fill="black" />
+                        </svg></h4>
+                    <h4>Stage <svg width="15" viewBox="0 0 448 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M246.525 258.625C234.025 271.125 213.725 271.125 201.225 258.625L41.225 98.625C28.725 86.125 28.725 65.8249 41.225 53.3249C53.725 40.825 74.025 40.825 86.525 53.325L223.925 190.725L361.325 53.425C373.825 40.925 394.125 40.925 406.625 53.425C419.125 65.925 419.125 86.225 406.625 98.725L246.625 258.725L246.525 258.625Z"
+                                fill="black" />
+                        </svg></h4>
+                    <h4>Priority <svg width="15" viewBox="0 0 448 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M246.525 258.625C234.025 271.125 213.725 271.125 201.225 258.625L41.225 98.625C28.725 86.125 28.725 65.8249 41.225 53.3249C53.725 40.825 74.025 40.825 86.525 53.325L223.925 190.725L361.325 53.425C373.825 40.925 394.125 40.925 406.625 53.425C419.125 65.925 419.125 86.225 406.625 98.725L246.625 258.725L246.525 258.625Z"
+                                fill="black" />
+                        </svg></h4>
+                </div>
+
+            </div>
         </div>
         <div class="deals-table__menu-mobile">
             <ul>
@@ -159,12 +191,14 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td>
+                        <h6>*Sorted by Ascending Deal Value</h6>
+                    </td>
                 </tr>
-
             </div>
 
-
         </table>
+
     </section>
 
     <!-- DEALS' TABLE end -->
@@ -287,6 +321,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td colspan="2">
+                        <h6>*Sorted by Descending Priority</h6>
+                    </td>
                 </tr>
             </div>
 
@@ -413,6 +450,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td colspan="2">
+                        <h6>*Sorted by Descending Priority</h6>
+                    </td>
                 </tr>
             </div>
 

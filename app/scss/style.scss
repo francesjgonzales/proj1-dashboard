@@ -71,16 +71,30 @@
   &__menu-item {
     list-style-type: none;
     display: inline-block;
+    cursor: pointer;
   }
-  
+
   &__menu-links {
     padding: 0 1em 0 1em;
     display: block;
   }
 
+  &__menu-item-filter {
+    display: none;
+  }
+  
+  &__menu-item-filter-links {
+    position: absolute;
+    margin-top: 1em;
+    padding: 0 1em 0 1em;
+    width: 12em;
+    background-color: #fff;
+    display: block;
+  }
+
   &__menu-mobile {
     display: none;
-    padding: 2em 2em 0;
+    /* padding: 2em 2em 0; */
   }
 
   &__content {

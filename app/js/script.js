@@ -6,6 +6,13 @@ function hamburgerBtn() {
     navbarMenuItemMobile.classList.toggle('nav-menu__links');
 };
 
+//Create a dropdown filter menu
+function filterBtn() {
+    const filterMenu = document.querySelector(".deals-table__menu-item-filter");
+    filterMenu.classList.toggle('deals-table__menu-item-filter-links');
+};
+
+
 /*---------------------------------------------------*/
 
 //Fetch Deals Data

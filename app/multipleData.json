@@ -44,7 +44,7 @@
 	"closed": [
 		{
 			"company": "Sony",
-			"image": "app/images/profile3.png",
+			"image": "app/images/profile4.png",
 			"stageColor": "#04B767",
 			"stageText": "Won",
 			"priorityText": "Low",
@@ -57,7 +57,7 @@
 		},
 		{
 			"company": "Adidas",
-			"image": "app/images/profile2.png",
+			"image": "app/images/profile5.png",
 			"stageColor": "#04B767",
 			"stageText": "Won",
 			"priorityText": "Low",
