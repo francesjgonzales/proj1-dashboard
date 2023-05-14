@@ -28,31 +28,31 @@
   }
 
   @media (max-width: 414px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 2em 0 2em;
+    display: block !important;
+
+    &__header {
+      padding: 3em 2em 0;
+    }
+
+    &__item {
+      display: none;
+    }
+
+    &__hamburger {
+      display: flex;
+      padding: 1.6em 2em 0;
+    }
+
+    &__links {
+      text-align: center;
+      width: 100%;
+      display: inline-block;
       flex-direction: column;
-      align-items: flex-start;
-      padding: 2em 2em 0 2em;
-      display: block!important;
-
-      &__header {
-        padding: 3em 2em 0;
-      }
-
-      &__item {
-        display: none;
-      }
-
-      &__hamburger {
-        display: flex;
-        padding: 1.6em 2em 0;
-      }
-
-      &__links {
-        text-align: center;
-        width: 100%;
-        display: inline-block;
-        flex-direction: column;
-        padding: 1em 2em;
-      }
+      padding: 1em 2em;
+    }
   }
 }
 
@@ -81,9 +81,9 @@
 
   &__menu-item-filter {
     display: none;
-    border: none!important;
+    border: none !important;
   }
-  
+
   &__menu-item-filter-links {
     position: absolute;
     margin-top: 1em;
@@ -115,24 +115,7 @@
 
   &__content-company {
     width: 10em;
-    color: #505676;
-  }
-
-  &__content-priorityText {
-    color: #fff;
-  }
-
-  &__content-priorityTab {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  &__content-stageText {
-    color: #fff;
-  }
-
-  &__content-stageTab {
-    background-color: #F4F5F7;
+    color: var(--mid-grey-color);
   }
 
   &__content-user-image {
@@ -187,7 +170,7 @@
     list-style-type: none;
     display: inline-block;
   }
-  
+
   &__menu-links {
     padding: 0 1em 0 1em;
     display: block;
@@ -217,11 +200,13 @@
 
   &__content-priorityTab {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 110px;
   }
 
   &__content-stageText {
     color: #fff;
+    text-align: center;
   }
 
   &__content-stageTab {
@@ -280,7 +265,7 @@
     list-style-type: none;
     display: inline-block;
   }
-  
+
   &__menu-links {
     padding: 0 1em 0 1em;
     display: block;
@@ -310,7 +295,8 @@
 
   &__content-priorityTab {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 110px;
   }
 
   &__content-stageText {
@@ -352,6 +338,8 @@
       width: 100%;
       height: auto;
     }
+
+
   }
 
 }

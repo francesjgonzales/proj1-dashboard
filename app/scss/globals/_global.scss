@@ -1,33 +1,59 @@
 /* Global SCSS partial */
 
 html {
-    box-sizing: border-box;
-    font-size: 100%;
-  }
-  
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+  font-size: 100%;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI','Inter', sans-serif;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  section {
-    padding: 2em 2em 0;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+}
 
-  ul, li {
-    padding: 0;
-  }
+section {
+  padding: 2em 2em 0;
+}
 
-  // Deals, Closed Won and Board Summary Tables
-  th, td {
-    text-align: left;
-    margin: 1em;
-    padding: 0.5em;
-    width: auto;
-  }
+ul,
+li {
+  padding: 0;
+}
 
+// Deals, Closed Won and Board Summary Tables
+th,
+td {
+  margin: 1em;
+  padding: 0.5em;
+}
+
+th {
+  border-radius: 10px 10px 0 0;
+}
+
+.tab-width-sm {
+  min-width: 8rem;
+}
+
+.tab-width-med {
+  min-width: 13rem;
+}
+
+.tab-text {
+  min-width: 8rem;
+}
+
+.tab-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-left: 0.75rem;
+}

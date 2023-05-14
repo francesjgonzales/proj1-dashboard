@@ -49,12 +49,12 @@ fetch('app/multipleData.json')
             //Append the properties in the object into the created empty string
             key += `
             <tr>
-            <th> ${property.company} </th>
+            <th class="text-left"> ${property.company} </th>
             <td><i class="fa-solid fa-pen-to-square"></i></td>
-            <td style="background-color: ${property.stageColor};"><p class="deals-table__content-stageText">${property.stageText}</p></td>
-            <td style="background-color: ${property.priorityColor};"><p class="deals-table__content-priorityText">${property.priorityText}</p></td>
-            <td class="deals-table__content-dealValue">${formattedCurrency}</td>
-            <td>${newDate} <i class="fa-solid fa-bell"></i></td>
+            <td style="background-color: ${property.stageColor};"><p class="tab-text text-center">${property.stageText}</p></td>
+            <td style="background-color: ${property.priorityColor};"><p class="tab-text text-center">${property.priorityText}</p></td>
+            <td class="text-left">${formattedCurrency}</td>
+            <td class="tab-date text-left">${newDate} <i class="fa-solid fa-bell icon text-right"></i></td>
             <td>${property.poc}</td>
             <td><img src="${property.image}" alt="user-image"
             class="deals-table__content-user-image"></td>

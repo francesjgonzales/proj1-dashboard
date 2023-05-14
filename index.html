@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS File -->
-    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1683862031803">
+    <link rel="stylesheet" type="text/css" href="dist/style.css?cb=1684060755414">
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1e0a0ac5e4.js" crossorigin="anonymous"></script>
@@ -126,7 +126,7 @@
                     </a>
                 </li>
                 <li class="deals-table__menu-item">
-                    <a href="" class="deals-table__menu-links">
+                    <a onclick='filterBtn()' class="deals-table__menu-links">
                         <i class="fa-solid fa-filter"></i>
                     </a>
                 </li>
@@ -149,28 +149,30 @@
                 <thead>
                     <h2 class="deals-table__content-title"><i class="fa-solid fa-circle-chevron-down"></i> Deals</h2>
                     <tr>
-                        <th class="deals-table__content-company" scope="col"> Company </th>
+                        <th class="tab-width-med" scope="col"> Company </th>
                         <th></th>
-                        <th class="deals-table__content-tab"> Stage </th>
-                        <th class="deals-table__content-priorityTab"> Priority <svg xmlns="http://www.w3.org/2000/svg"
+                        <th class="tab-width-sm tab-color"> Stage </th>
+                        <th class="tab-width-sm deals-table__content-priorityTab">
+                            Priority<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                width="12" height="100%">
+                                <path
+                                    d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                            </svg>
+                        </th>
+                        <th class="tab-width-sm"> Deal Value <svg class="icon" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 384 512" width="12" height="100%">
                                 <path
                                     d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg></th>
-                        <th> Deal Value <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12"
-                                height="100%">
+                        <th class="tab-width-med tab-color"> Close Date <svg class="icon"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12" height="100%">
                                 <path
                                     d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg></th>
-                        <th> Close Date <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12"
-                                height="100%">
-                                <path
-                                    d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                            </svg></th>
-                        <th> POC </th>
+                        <th class="tab-width-sm deals-table__content-deal-tab"> POC </th>
                         <th> </th>
-                        <th> Last Contact </th>
-                        <th> Phone </th>
+                        <th class="tab-width-med deals-table__content-deal-tab"> Last Contact </th>
+                        <th class="tab-width-med deals-table__content-deal-tab"> Phone </th>
                         <th></th>
                     </tr>
                 </thead>
@@ -469,7 +471,7 @@
     <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 
     <!-- Javascript File -->
-    <script src="dist/all.js?cb=1683862031803"></script>
+    <script src="dist/all.js?cb=1684060755414"></script>
 
 </body>
 

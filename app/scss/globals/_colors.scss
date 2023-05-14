@@ -7,13 +7,38 @@
 
 
     /* Stage colors */
-    --proposal-color: #047243;
-    --lead-color: #007BB7;
-    --negotiation-color: #6B43C8;
-    --won-color: #04B767;
+    --dark-green-color: #047243;
+    --mid-blue-color: #007BB7;
+    --purple-color: #6B43C8;
+    --light-green-color: #04B767;
 
     /* Priority colors */
-    --high-color: #FD582A;
-    --low-color: #5CC5FF;
+    --red-color: #FD582A;
+    --light-blue-color: #5CC5FF;
 
+}
+
+//Tables
+table {
+    color: var(--mid-grey-color);
+    background-color: var(--light-grey-color);
+    border-color: var(--white-color);
+}
+
+.tab-text {
+    color: var(--white-color);
+}
+
+.tab-color {
+    background-color: var(--light-grey-color);
+}
+
+
+// Deals Table
+.deals-table {
+
+    &__content-title,
+    &__content-deal-tab {
+        color: var(--dark-green-color)
+    }
 }
