@@ -21,11 +21,14 @@
 //Tables
 table {
     color: var(--mid-grey-color);
-    background-color: var(--light-grey-color);
     border-color: var(--white-color);
 }
 
-.tab-text {
+th {
+    color: var(--dark-grey-color)
+}
+
+.white-text {
     color: var(--white-color);
 }
 

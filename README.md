@@ -56,3 +56,5 @@ exports.build = series(parallel(scssTask, jsTask, optimizeImg));
 - [how to deploy gulp build in netlify](https://www.youtube.com/watch?v=KQp3VKSYQ_U)
 
 - [toggle classList](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_class)
+
+- [AG Grid](https://www.ag-grid.com/javascript-data-grid/grid-options/)

@@ -102,7 +102,6 @@
 
   &__menu-mobile {
     display: none;
-    /* padding: 2em 2em 0; */
   }
 
   &__content {
@@ -118,11 +117,21 @@
     color: var(--mid-grey-color);
   }
 
+  &__content-company-name {
+    border-color: var(--dark-green-color);
+    border-left-style: solid;
+    border-width: 0.8em;
+  }
+
   &__content-user-image {
     width: 40px;
     height: auto;
     clip-path: circle(30%);
     -webkit-clip-path: circle(40%);
+  }
+
+  &__content-total {
+    background-color: var(--light-grey-color);
   }
 
   @media (max-width: 414px) {
@@ -150,9 +159,11 @@
       height: auto;
     }
   }
-
 }
 
+#dealsOutput {
+  background: var(--light-grey-color);
+}
 
 // Closed Table
 .closed-table {

@@ -21,6 +21,10 @@ section {
   padding: 2em 2em 0;
 }
 
+table {
+  cursor: touch;
+}
+
 ul,
 li {
   padding: 0;
@@ -43,10 +47,6 @@ th {
 
 .tab-width-med {
   min-width: 13rem;
-}
-
-.tab-text {
-  min-width: 8rem;
 }
 
 .tab-date {

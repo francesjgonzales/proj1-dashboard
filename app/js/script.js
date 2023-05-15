@@ -49,17 +49,17 @@ fetch('app/multipleData.json')
             //Append the properties in the object into the created empty string
             key += `
             <tr>
-            <th class="text-left"> ${property.company} </th>
+            <td class="text-left deals-table__content-company-name bold">${property.company}</td>
             <td><i class="fa-solid fa-pen-to-square"></i></td>
-            <td style="background-color: ${property.stageColor};"><p class="tab-text text-center">${property.stageText}</p></td>
-            <td style="background-color: ${property.priorityColor};"><p class="tab-text text-center">${property.priorityText}</p></td>
-            <td class="text-left">${formattedCurrency}</td>
-            <td class="tab-date text-left">${newDate} <i class="fa-solid fa-bell icon text-right"></i></td>
-            <td>${property.poc}</td>
+            <td style="background-color: ${property.stageColor};"><p class="tab-width-sm text-center bold white-text">${property.stageText}</p></td>
+            <td style="background-color: ${property.priorityColor};"><p class="white-text text-center bold">${property.priorityText}</p></td>
+            <td class="text-center bold">${formattedCurrency}</td>
+            <td class="tab-width-med tab-date text-left bold">${newDate} <i class="fa-solid fa-bell icon text-right"></i></td>
+            <td class="tab-width-med bold">${property.poc}</td>
             <td><img src="${property.image}" alt="user-image"
             class="deals-table__content-user-image"></td>
-            <td>${newContactDate}</td>
-            <td><i class="fa-solid fa-phone"></i> ${property.phone}</td>
+            <td class="bold">${newContactDate}</td>
+            <td class="bold">${property.phone}</td>
             <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
         </tr> `;
         }
