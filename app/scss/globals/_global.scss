@@ -21,10 +21,6 @@ section {
   padding: 2em 2em 0;
 }
 
-table {
-  cursor: touch;
-}
-
 ul,
 li {
   padding: 0;
@@ -41,6 +37,12 @@ th {
   border-radius: 10px 10px 0 0;
 }
 
+.tab-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Margins, Padding & Width
 .tab-width-sm {
   min-width: 8rem;
 }
@@ -49,11 +51,7 @@ th {
   min-width: 13rem;
 }
 
-.tab-date {
-  display: flex;
-  justify-content: space-between;
-}
-
+// Icons and buttons
 .icon {
   margin-left: 0.75rem;
 }

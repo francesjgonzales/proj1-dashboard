@@ -153,7 +153,7 @@
                         <th class="tab-width-med" scope="col"> Company </th>
                         <th></th>
                         <th class="tab-width-sm tab-color"> Stage </th>
-                        <th class="tab-width-sm deals-table__content-priorityTab">
+                        <th class="tab-width-sm">
                             Priority<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
                                 width="12" height="100%">
                                 <path
@@ -279,14 +279,15 @@
         <table class="closed-table__content">
             <div>
                 <thead>
-                    <h2 class="closed-table__content-title"><i class="fa-solid fa-circle-chevron-down"></i> Closed Won
+                    <h2 class="closed-table__content-title light"><i class="fa-solid fa-circle-chevron-down"></i> Closed
+                        Won
                     </h2>
                     <tr>
-                        <th class="closed-table__content-company" scope="col"> Company</th>
+                        <th class="tab-width-med" scope="col"> Company</th>
                         <th></th>
-                        <th> Stage </th>
-                        <th> Priority <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12"
-                                height="100%">
+                        <th class="tab-width-sm tab-color"> Stage </th>
+                        <th class="tab-width-sm"> Priority <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                width="12" height="100%">
                                 <path
                                     d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg></th>
@@ -295,15 +296,15 @@
                                 <path
                                     d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg></th>
-                        <th> Close Date <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12"
-                                height="100%">
+                        <th class="tab-width-med tab-color"> Close Date <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512" width="12" height="100%">
                                 <path
                                     d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg></th>
-                        <th> POC </th>
+                        <th class="tab-width-sm closed-table__content-deal-tab"> POC </th>
                         <th></th>
-                        <th> Last Contact </th>
-                        <th> Phone </th>
+                        <th class="tab-width-med closed-table__content-deal-tab"> Last Contact </th>
+                        <th class="tab-width-med closed-table__content-deal-tab"> Phone </th>
                         <th></th>
                     </tr>
                 </thead>
@@ -319,8 +320,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>
-                        <p id="totalClosedSum"></p>
+                    <td class="closed-table__content-total text-center">
+                        <h4 id="totalClosedSum"></h4>
+                        <p>sum</p>
                     </td>
                     <td></td>
                     <td></td>
@@ -408,14 +410,15 @@
         <table class="board-table__content">
             <div>
                 <thead>
-                    <h2 class="board-table__content-title"><i class="fa-solid fa-circle-chevron-down"></i> Board Summary
+                    <h2 class="board-table__content-title light"><i class="fa-solid fa-circle-chevron-down"></i> Board
+                        Summary
                     </h2>
                     <tr>
-                        <th class="board-table__content-company" scope="col"> Company</th>
+                        <th class="tab-width-med" scope="col"> Company</th>
                         <th></th>
-                        <th> Stage </th>
-                        <th> Priority <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12"
-                                height="100%">
+                        <th class="tab-width-sm tab-color"> Stage </th>
+                        <th class="tab-width-sm"> Priority <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                width="12" height="100%">
                                 <path
                                     d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg></th>
@@ -424,15 +427,15 @@
                                 <path
                                     d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg></th>
-                        <th> Close Date <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12"
-                                height="100%">
+                        <th class="tab-width-med tab-color"> Close Date <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512" width="12" height="100%">
                                 <path
                                     d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg></th>
-                        <th> POC </th>
+                        <th class="tab-width-sm closed-table__content-deal-tab"> POC </th>
                         <th></th>
-                        <th> Last Contact </th>
-                        <th> Phone </th>
+                        <th class="tab-width-med closed-table__content-deal-tab"> Last Contact </th>
+                        <th class="tab-width-med closed-table__content-deal-tab"> Phone </th>
                         <th></th>
                     </tr>
                 </thead>
@@ -448,8 +451,9 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>
-                        <p id="totalBoardSum"></p>
+                    <td class="closed-table__content-total text-center">
+                        <h4 id="totalBoardSum"></h4>
+                        <p>sum</p>
                     </td>
                     <td></td>
                     <td></td>

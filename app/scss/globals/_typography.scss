@@ -13,15 +13,7 @@ p {
     margin-block-end: 0;
 }
 
-a, a:visited, a:active {
-    text-decoration: none;
-    color: var(--dark-grey-color);
-}
-
-a:hover {
-    color: var(--mid-grey-color)
-}
-
+// Font alignment
 .text-left {
     text-align: start;
 }
@@ -34,6 +26,7 @@ a:hover {
     text-align: end;
 }
 
+// Font-weight
 .light {
     font-weight: 400;
 }
@@ -44,4 +37,9 @@ a:hover {
 
 .bold {
     font-weight: 700;
+}
+
+// Icons and buttons
+a, a:visited, a:active {
+    text-decoration: none;
 }

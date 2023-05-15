@@ -37,11 +37,26 @@ th {
 }
 
 
-// Deals Table
+// Tables
 .deals-table {
-
     &__content-title,
     &__content-deal-tab {
         color: var(--dark-green-color)
     }
+}
+
+.closed-table {
+    &__content-title,
+    &__content-deal-tab {
+        color: var(--light-green-color)
+    }
+}
+
+// Icons and buttons
+a, a:visited, a:active {
+    color: var(--dark-grey-color);
+}
+
+a:hover {
+    color: var(--mid-grey-color)
 }

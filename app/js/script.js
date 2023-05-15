@@ -139,22 +139,24 @@ fetch('app/multipleData.json')
             const lastContactDate = new Date(dataProperty.lastContact);
             const newContactDate = lastContactDate.toDateString();
 
+
             //Append the properties in the object into the created empty string
             dataValue += `
             <tr>
-            <th> ${dataProperty.company}</th>
+            <td class="text-left closed-table__content-company-name bold">${dataProperty.company}</td>
             <td><i class="fa-solid fa-pen-to-square"></i></td>
-            <td style="background-color: ${dataProperty.stageColor};"><p>${dataProperty.stageText}</p></td>
-            <td style="background-color: ${dataProperty.priorityColor};"><p>${dataProperty.priorityText}</p></td>
-            <td class="closed-table__content-closedValue">${formattedCurrency}</td>
-            <td>${newDate} <i class="fa-solid fa-bell"></i></td>
-            <td>${dataProperty.poc}</td>
+            <td style="background-color: ${dataProperty.stageColor};"><p class="tab-width-sm text-center bold white-text">${dataProperty.stageText}</p></td>
+            <td style="background-color: ${dataProperty.priorityColor};"><p class="white-text text-center bold">${dataProperty.priorityText}</p></td>
+            <td class="text-center bold">${formattedCurrency}</td>
+            <td class="tab-width-med tab-date text-left bold">${newDate} <i class="fa-solid fa-bell icon text-right"></i></td>
+            <td class="tab-width-med bold">${dataProperty.poc}</td>
             <td><img src="${dataProperty.image}" alt="user-image"
-                    class="deals-table__content-user-image"></td>
-            <td>${newContactDate}</td>
-            <td><i class="fa-solid fa-phone"></i> ${dataProperty.phone}</td>
+            class="deals-table__content-user-image"></td>
+            <td class="bold">${newContactDate}</td>
+            <td class="bold">${dataProperty.phone}</td>
             <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>`;
+        </tr> `;
+
         }
 
         //Populate the appended data in DOM element
@@ -245,19 +247,21 @@ fetch('app/multipleData.json')
             //Append the properties in the object into the created empty string
             totalDataValue += `
             <tr>
-            <th> ${overallData.company}</th>
+            <td class="text-left closed-table__content-company-name bold">${overallData.company}</td>
             <td><i class="fa-solid fa-pen-to-square"></i></td>
-            <td style="background-color: ${overallData.stageColor};"><p>${overallData.stageText}</p></td>
-            <td style="background-color: ${overallData.priorityColor};"><p>${overallData.priorityText}</p></td>
-            <td class="closed-table__content-closedValue">${formattedCurrency}</td>
-            <td>${newDate} <i class="fa-solid fa-bell"></i></td>
-            <td>${overallData.poc}</td>
+            <td style="background-color: ${overallData.stageColor};"><p class="tab-width-sm text-center bold white-text">${overallData.stageText}</p></td>
+            <td style="background-color: ${overallData.priorityColor};"><p class="white-text text-center bold">${overallData.priorityText}</p></td>
+            <td class="text-center bold">${formattedCurrency}</td>
+            <td class="tab-width-med tab-date text-left bold">${newDate} <i class="fa-solid fa-bell icon text-right"></i></td>
+            <td class="tab-width-med bold">${overallData.poc}</td>
             <td><img src="${overallData.image}" alt="user-image"
-                    class="deals-table__content-user-image"></td>
-            <td>${newContactDate}</td>
-            <td><i class="fa-solid fa-phone"></i> ${overallData.phone}</td>
+            class="deals-table__content-user-image"></td>
+            <td class="bold">${newContactDate}</td>
+            <td class="bold">${overallData.phone}</td>
             <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
-        </tr>`;
+        </tr> `;
+
+
         }
 
         //Populate the appended data in DOM element

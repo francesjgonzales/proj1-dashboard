@@ -57,6 +57,7 @@
   }
 }
 
+
 // Deals Table
 .deals-table {
   padding: 2em 5em 0;
@@ -162,9 +163,6 @@
   }
 }
 
-#dealsOutput {
-  background: var(--light-grey-color);
-}
 
 // Closed Table
 .closed-table {
@@ -206,14 +204,14 @@
     color: #505676;
   }
 
-  &__content-priorityText {
-    color: #fff;
+  &__content-company-name {
+    border-color: var(--light-green-color);
+    border-left-style: solid;
+    border-width: 0.8em;
   }
 
-  &__content-priorityTab {
-    display: flex;
-    justify-content: space-between;
-    width: 110px;
+  &__content-priorityText {
+    color: #fff;
   }
 
   &__content-stageText {
@@ -230,6 +228,10 @@
     height: auto;
     clip-path: circle(30%);
     -webkit-clip-path: circle(40%);
+  }
+
+  &__content-total {
+    background-color: var(--light-grey-color);
   }
 
   @media (max-width: 414px) {
@@ -257,7 +259,6 @@
       height: auto;
     }
   }
-
 }
 
 
@@ -305,12 +306,6 @@
     color: #fff;
   }
 
-  &__content-priorityTab {
-    display: flex;
-    justify-content: space-between;
-    width: 110px;
-  }
-
   &__content-stageText {
     color: #fff;
   }
@@ -350,11 +345,15 @@
       width: 100%;
       height: auto;
     }
-
-
   }
-
 }
+
+
+// Added light-grey bg in td rows
+#dealsOutput, #multipleDataOutput, #overallDataOutput {
+  background: var(--light-grey-color);
+}
+
 
 // Footer Table
 .footer {
