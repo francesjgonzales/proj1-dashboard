@@ -49,7 +49,7 @@ fetch('app/multipleData.json')
             //Append the properties in the object into the created empty string
             key += `
             <tr>
-            <td class="text-left deals-table__content-company-name bold">${property.company}</td>
+            <td style="border-color:${property.borderColor}" class="text-left deals-table__content-company-name bold">${property.company}</td>
             <td><i class="fa-solid fa-pen-to-square"></i></td>
             <td style="background-color: ${property.stageColor};"><p class="tab-width-sm text-center bold white-text">${property.stageText}</p></td>
             <td style="background-color: ${property.priorityColor};"><p class="white-text text-center bold">${property.priorityText}</p></td>
@@ -143,7 +143,7 @@ fetch('app/multipleData.json')
             //Append the properties in the object into the created empty string
             dataValue += `
             <tr>
-            <td class="text-left closed-table__content-company-name bold">${dataProperty.company}</td>
+            <td style="border-color:${dataProperty.borderColor}" class="text-left closed-table__content-company-name bold">${dataProperty.company}</td>
             <td><i class="fa-solid fa-pen-to-square"></i></td>
             <td style="background-color: ${dataProperty.stageColor};"><p class="tab-width-sm text-center bold white-text">${dataProperty.stageText}</p></td>
             <td style="background-color: ${dataProperty.priorityColor};"><p class="white-text text-center bold">${dataProperty.priorityText}</p></td>
@@ -152,7 +152,7 @@ fetch('app/multipleData.json')
             <td class="tab-width-med bold">${dataProperty.poc}</td>
             <td><img src="${dataProperty.image}" alt="user-image"
             class="deals-table__content-user-image"></td>
-            <td class="bold">${newContactDate}</td>
+            <td class="bold" id="contactDate">${newContactDate}</td>
             <td class="bold">${dataProperty.phone}</td>
             <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
         </tr> `;
@@ -227,8 +227,6 @@ fetch('app/multipleData.json')
         //Loop the 'multipleData' using 'for...of...'
         for (let overallData of boardArray) {
 
-
-
             //Convert to Closed Won Value to currency
             const number = parseFloat(overallData.dealValue);
             const formattedCurrency = number.toLocaleString("en-US", {
@@ -247,7 +245,7 @@ fetch('app/multipleData.json')
             //Append the properties in the object into the created empty string
             totalDataValue += `
             <tr>
-            <td class="text-left closed-table__content-company-name bold">${overallData.company}</td>
+            <td style="border-color:${overallData.borderColor}" class="text-left closed-table__content-company-name bold">${overallData.company}</td>
             <td><i class="fa-solid fa-pen-to-square"></i></td>
             <td style="background-color: ${overallData.stageColor};"><p class="tab-width-sm text-center bold white-text">${overallData.stageText}</p></td>
             <td style="background-color: ${overallData.priorityColor};"><p class="white-text text-center bold">${overallData.priorityText}</p></td>

@@ -1,6 +1,7 @@
 {
 	"deals": [
 		{
+			"borderColor": "#047243",
 			"company": "Dunder Mifflin",
 			"image": "app/images/profile2.png",
 			"stageColor": "#047243",
@@ -14,6 +15,7 @@
 			"phone": "+16023334444"
 		},
 		{
+			"borderColor": "#047243",
 			"company": "Rose Apothecary",
 			"image": "app/images/profile3.png",
 			"stageColor": "#007BB7",
@@ -27,6 +29,7 @@
 			"phone": "+16024443333"
 		},
 		{
+			"borderColor": "#047243",
 			"company": "Phoenix Suns",
 			"image": "app/images/profile1.png",
 			"stageColor": "#6B43C8",
@@ -43,6 +46,7 @@
 
 	"closed": [
 		{
+			"borderColor": "#04B767",
 			"company": "Sony",
 			"image": "app/images/profile4.png",
 			"stageColor": "#04B767",
@@ -56,6 +60,7 @@
 			"phone": "+16025553333"
 		},
 		{
+			"borderColor": "#04B767",
 			"company": "Adidas",
 			"image": "app/images/profile5.png",
 			"stageColor": "#04B767",
