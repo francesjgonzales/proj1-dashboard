@@ -4,6 +4,14 @@
 
 This project is focused on building a simple, clean scalable and maintainable website using HTML semantics, BEM for CSS organization, Sass for CSS preprocessor, vanilla javascript for local API fetch and navbar responsiveness and Gulp for automated front-end build task such as minifying SCSS, JS and images.
 
+### Run in local
+
+- It will only run if **generator-website-starter** dependencies are install in local machine
+
+```
+gulp
+```
+
 ### UI Design
 
 The revised design showcased below is an enhanced rendition of the task I worked on during my previous front-end interview. The challenge presented was to create the design without relying on any frameworks. I implemented slight modifications, such as the removal of unnecessary icons and overall simplification, resulting in an improved version.
